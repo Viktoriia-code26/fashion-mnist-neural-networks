@@ -1,35 +1,38 @@
 # goit_DS_ML_Hw-09
-# Neural Network with Keras
+# Fashion MNIST Classification with Keras
 
-This project demonstrates how to build, train, and evaluate a neural network using **Keras**.
+This project demonstrates the implementation and comparison of different neural network architectures using **Keras** for the **Fashion MNIST image classification task**.
 
-## Project Overview
+## Models
 
-The goal of this project is to create a neural network for a classification task and evaluate its performance on test data.
+Several neural network architectures were tested:
 
-The baseline model achieved an accuracy of approximately **86.24%**.
+* Baseline Dense Neural Network
+* Improved Dense Network with GELU activation
+* Convolutional Neural Network (CNN)
 
-This result can be used as a starting point for further improvements, including changes to the model architecture and hyperparameter tuning.
+## Results
 
-## Technologies
+The baseline Dense model provided a good starting point with an accuracy of approximately **86.24%**.
+
+Further improvements to the Dense architecture resulted in a small performance increase. However, the **Convolutional Neural Network (CNN)** achieved the best result:
+
+**CNN Test Accuracy: 92.16%**
+
+## Conclusion
+
+Increasing the complexity of a standard Dense network produced only a modest improvement.
+
+The CNN performed significantly better because convolutional layers can capture the spatial structure and local patterns of images.
+
+Therefore, **CNN was the most suitable architecture for the Fashion MNIST image classification task**.
+
+## 🛠 Technologies
 
 * Python
 * TensorFlow
 * Keras
 * NumPy
 * Matplotlib
+* Fashion MNIST
 
-## Possible Improvements
-
-* Experiment with different neural network architectures
-* Tune hyperparameters
-* Add more hidden layers
-* Apply regularization techniques
-* Compare different optimization algorithms
-* Improve model accuracy
-
-## Result
-
-**Test Accuracy: 86.24%**
-
-The model provides a good baseline, but its architecture can be further improved.
